@@ -1,0 +1,77 @@
+body {
+    background-color: black;
+}
+
+
+h2 {
+    color: black;
+}
+
+h1 {
+}
+
+.players{
+  
+    box-sizing:border-box;
+}
+
+.player{
+    width: 25%;
+    height:100px;
+    float: left;
+    background-color: white;
+    text-align:center;
+}
+
+#p1 {
+    background-color:antiquewhite;
+}
+
+#p2 {
+    background-color:beige;
+}
+
+#p4 {
+    background-color:cornsilk;
+}
+
+
+
+.rounds {
+    position:unset;
+}
+
+.round {
+    
+    
+    background-color: white;
+}
+
+
+.cardcontent {
+    position:absolute;
+    margin-top: 500px;
+    box-sizing:border-box;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    float: left;
+    background-color: greenyellow;
+    box-shadow: 0 4px 8px 0 #26fdb7;
+    transition: 0.3s;
+}
+
+.word {
+    font-size:40px;
+    margin-top:100px;
+    text-align:center;
+}
+
+.definition {
+    margin: 50px 100px;
+    float: left;
+    color:white;
+}
