@@ -5,6 +5,7 @@ body {
 
 h2 {
     color: black;
+    font-size:3vw;
 }
 
 h1 {
@@ -20,7 +21,7 @@ h1 {
 
 .player{
     width: 25%;
-    height:100px;
+    height:15vw;
     float: left;
     background-color: white;
     text-align:center;
@@ -39,26 +40,116 @@ h1 {
 }
 
 
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#roundtext {
+    position:absolute;
+    top:25vw;
+    left:50%;
+    font-size: 10vw;
+    color:white;
+    transform: translate(-50%, 50%);
+    -ms-transform:translate(-50%, 50%);
+}
+
+
+
 .processor {
-    height: 500px;
+    height: 40vw;
     position: relative;
-    margin-top: 200px;
+    margin-top: 20vw;
     background-color: white;
     box-sizing: border-box;
 }
 
-#timer {
-    width: 200px;
-    height: 200px;
+
+#tutorial {
+    
+    float:left;
+    margin-left:5vw;
+    margin-top:5vw;
+}
+
+#step1 {
+    font-size:4vw;
+}
+
+#step2 {
+    font-size: 2vw;
+    box-sizing: border-box;
+}
+#step2text {
+    width: 65%;
     float: left;
-    margin-left:100px;
-    margin-top:150px;
+}
+
+#startgame {
+    padding: 6vw 6vw;
+    font-size: 6vw;
+    float: right;
+    margin-top: 5vw;
+    margin-right:5vw;
+    border-radius: 3vw;
+    animation: blinkingBackground 0.5s infinite;
+}
+
+@keyframes blinkingBackground {
+    0% {
+        background-color: greenyellow;
+    }
+
+    25% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: rgb(0, 36, 255);
+    }
+
+    75% {
+        background-color: orangered;
+    }
+
+    100% {
+        background-color: rgb(255, 0, 220);
+    }
+}
+
+
+#timer {
+    width: 20vw;
+    height: 20vw;
+    float: left;
+    margin-left: 10vw;
+    margin-top: 10vw;
     background-color: black;
     color: white;
-    font-size:100px;
-    text-align:center;
-    line-height:200px;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 20vw;
 }
+
+
+.turns{
+    font-size:1.6vw;
+    float:right;
+    margin-right: 1vw;
+
+}
+
+
 
 
 .rounds {
@@ -72,16 +163,20 @@ h1 {
 }
 
 
+
+
+
+
 .cardcontent {
     position:absolute;
-    margin-top: 500px;
+    margin-top: 5vw;
     box-sizing:border-box;
 }
 
 .card {
-    width: 300px;
-    height: 300px;
-    margin-left: 100px;
+    width: 20vw;
+    height: 20vw;
+    margin-left: 5vw;
     float: left;
     background-color: greenyellow;
     box-shadow: 0 4px 8px 0 #26fdb7;
@@ -89,13 +184,14 @@ h1 {
 }
 
 .word {
-    font-size:40px;
-    margin-top:100px;
+    font-size:4vw;
+    margin-top:8vw;
     text-align:center;
 }
 
 .definition {
-    margin: 50px 100px;
+    margin-left:10vw;
     float: left;
-    color:white;
+    color: white;
+    font-size:1.5vw;
 }

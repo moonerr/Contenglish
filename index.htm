@@ -52,28 +52,92 @@
          -->
 
 
+
+
+
+<div id="overlay" style="display:none">
+
+    <div id="roundtext"> Round 1 </div>
+
+</div>
+
+
+
+
     <div class="processor">
 
-        <div id="timer" >
+
+        <div id="tutorial">
+
+            <div id="tutext">
+
+                <div id="step1">
+                    <p>
+                        Choose your player number at the top &#128070;
+                    </p>
+
+                </div>
+
+                <div id="step2" style="display:none">
+                    <p id="step2text">
+                        Wow. It is exciting that you choose to be <span id="playernum">Player X</span>!
+                        <br />
+                        In you four, there will be one spy &#127770 and three fellows &#127773 &#127773 &#127773 .
+                        <br />
+                        Each of you will get your secret word below &#128071; but &#127770 will have a different word from the rest of others.
+                        <br />
+                        Use your word to make sentence which should make sense in certain context
+                        and speak that out in your turn
+                        <b>with your word replaced by a 'Beep'. </b>
+                        <br />
+                        Be careful!
+                        
+                        &#127770 will win if you could not vote him/her(or maybe yourself) out in three rounds!
+                        <br />
+                        Press 'Go' if you are ready!
+
+                    </p>
+                    <button id="startgame" onclick="start()"> GO! </button>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+        <div id="timer" style="display:none">
             30
         </div>
 
-        <div class="turns">
+        <div class="turns" style="display:none">
 
-            <div id="p1turn">
+            <div class="turn" id="Player 1" style="display:none">
+                <p>Player 1 is making sentence.</p>
+                <p>Player 1 finished his turn.</p>
+            </div>
+
+            <div class="turn" id=" Player 2" style="display:none">
+                <p>Player 2 is making sentence.</p>
+                <p>Player 2 finished her turn.</p>
+
 
             </div>
 
-            <div id=" p2turn">
-
+            <div class="turn" id=" Player 3" style="display:none">
+                <p>Player 3 is making sentence.</p>
+                <p>Player 3 finished her turn.</p>
             </div>
 
-            <div id=" p3turn">
-
-            </div>
-
-            <div id=" p4turn">
-
+            <div class="turn" id=" Player 4" style="display:none">
+                <p>Player 4 is making sentence.</p>
+                <p>Player 4 finished his turn.</p>
             </div>
 
         </div>
