@@ -43,7 +43,7 @@ var turnsTimer = setInterval(function (){
     timeLeft--;
     document.getElementById("timer").textContent = timeLeft;
 
-    if (timeLeft == 7) {
+    if (timeLeft == 6) {
         var audio = new Audio('audio/timerding.mp3');
         audio.play();
     }
