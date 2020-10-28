@@ -217,7 +217,7 @@ h1 {
 .card {
     width: 20vw;
     height: 20vw;
-    margin-left: 5vw;
+    margin-left: 10vw;
     float: left;
     background-color: greenyellow;
     box-shadow: 0 4px 8px 0 #26fdb7;
