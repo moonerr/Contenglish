@@ -15,18 +15,26 @@
 
         <div class="player" id="p1" onclick="displayData(this)">
             <h2>Player 1</h2>
+            <div id="pv3" style="color: lightpink; display:none"> &#128070 </div>
         </div>
 
         <div class="player" id="p2" onclick="displayData(this)">
             <h2>Player 2</h2>
+            <div id="pv3" style="color: lightpink; display:none"> &#128070 </div>
         </div>
 
         <div class="player" id="p3" onclick="displayData(this)">
             <h2>Player 3</h2>
+            <div id="v1" style="color:black; display:none"> &#128070 </div>
+            <div id="v2" style="color:black; display:none"> &#128070 </div>
+            <div id="v3" style="color:black; display:none"> &#128070 </div>
+            <div id="pv3" style="color: lightpink; display:none"> &#128070 </div>
+
         </div>
 
         <div class="player" id="p4" onclick="displayData(this)">
             <h2>Player 4</h2>
+            <div id="pv3" style="color: lightpink; display:none"> &#128070 </div>
         </div>
 
     </div>
@@ -100,62 +108,64 @@
                     <button id="startgame" onclick="start()"> GO! </button>
                 </div>
 
-
-
             </div>
-
-
-
-
 
         </div>
 
-
+        <div id="vote" style="display:none">
+            <div id="pointer" style="color:lightpink"> &#128070 </div>
+            <div id="callforvoting"> Whoes word is different? </div>
+            <div id="win" style="display:none"> Congrats buddies:) Player 3 is definately the spy! </div>
+            <div id="guess" style="display:none"> </div>
+            <div id="know" style="display:none"></div>
+        </div>
 
         <div id="timer" style="display:none">
             30
         </div>
 
-        <div class="turns" style="display:none">
+        <div class="turns">
 
-            <div class="turn" id="Player 1" style="display:none">
-                <p>Player 1 is making sentence.</p>
-                <p>Player 1 finished his turn.</p>
+            <div class="turn" id="Player 1" >
+                <p id="o1" style="display:none">Player 1 is making sentence.</p>
+                <audio controls class="voiceshap" id="voice1" style="display:none">
+                    <source src="audio/1.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>                
+                <p id="e1" style="display:none">Player 1 finished her turn.</p>
             </div>
 
-            <div class="turn" id=" Player 2" style="display:none">
-                <p>Player 2 is making sentence.</p>
-                <p>Player 2 finished her turn.</p>
-
+            <div class="turn" id=" Player 2">
+                <p id="o2" style="display:none">Player 2 is making sentence.</p>
+                <audio controls class="voiceshap" id="voice2" style="display:none">
+                    <source src="audio/2.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <p id="e2" style="display:none">Player 2 finished her turn.</p>
 
             </div>
 
-            <div class="turn" id=" Player 3" style="display:none">
-                <p>Player 3 is making sentence.</p>
-                <p>Player 3 finished her turn.</p>
+            <div class="turn" id=" Player 3">
+                <p id="o3" style="display:none">Player 3 is making sentence.</p>
+                <audio controls class="voiceshap" id="voice3" style="display:none">
+                    <source src="audio/3.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <p id="e3" style="display:none">Player 3 finished her turn.</p>
             </div>
 
-            <div class="turn" id=" Player 4" style="display:none">
-                <p>Player 4 is making sentence.</p>
-                <p>Player 4 finished his turn.</p>
+            <div class="turn" id=" Player 4">
+                <p id="o4" style="display:none">Player 4 is making sentence.</p>
+                <audio controls class="voiceshap" id="voice4" style="display:none">
+                    <source src="audio/4.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <p id="e4" style="display:none">Player 4 finished her turn.</p>
             </div>
 
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
