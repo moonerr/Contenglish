@@ -19,12 +19,13 @@ h1 {
     box-sizing: border-box;
 }
 
-.player{
+.player {
     width: 25%;
-    height:15vw;
+    height: 15vw;
     float: left;
     background-color: white;
-    text-align:center;
+    text-align: center;
+    cursor: pointer;
 }
 
 .player:hover {
@@ -104,9 +105,10 @@ h1 {
     font-size: 6vw;
     float: right;
     margin-top: 5vw;
-    margin-right:5vw;
+    margin-right: 5vw;
     border-radius: 3vw;
     animation: blinkingBackground 0.5s infinite;
+    cursor: pointer;
 }
 
 @keyframes blinkingBackground {
@@ -169,7 +171,7 @@ h1 {
     height: 20vw;
     float: left;
     margin-left: 10vw;
-    margin-top: 10vw;
+    margin-top: 5vw;
     background-color: black;
     color: white;
     font-size: 10vw;
@@ -177,6 +179,69 @@ h1 {
     line-height: 20vw;
 }
 
+
+#operations {
+    position:absolute;
+    margin-top: 2vw;
+    margin-left: 10vw;
+}
+
+
+.operator {
+    
+    background-color: pink;
+    border: none;
+    color: white;
+    width:6vw;
+    height:6vw;
+    float: left;
+    margin-top: 25vw;
+    margin-right:1vw;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.operator .tooltiptext {
+    visibility: hidden;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    border-radius: 1vw;
+    padding: 1vw 0;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-top: -7vw;
+    margin-left: -22vw;
+}
+
+#voice .tooltiptext {
+    margin-left: -15vw;
+}
+
+#ring .tooltiptext {
+    margin-top:-7vw;
+    margin-left: -8vw;
+}
+
+.operator .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.operator:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
 
 .turns{
     font-size:1.6vw;
@@ -206,8 +271,6 @@ h1 {
 
 
 
-
-
 .cardcontent {
     position:absolute;
     margin-top: 5vw;
@@ -229,6 +292,18 @@ h1 {
     margin-top:8vw;
     text-align:center;
 }
+
+.save {
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 1vw 1.5vw;
+    float:left;
+    margin-left:0vw;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
 
 .definition {
     margin-left:10vw;

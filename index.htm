@@ -124,6 +124,23 @@
             30
         </div>
 
+        <div id="operations" style="display:none">
+            <button class="operator" id="pause"> &#8987 
+                <span class="tooltiptext">Finish before time out</span>
+            </button>
+            <button class="operator" id="voice">
+                &#127908
+                <span class="tooltiptext">mute yourself</span>
+            </button>
+            <button class="operator" id="ring" onclick="suspect()">
+                &#128373
+                <span class="tooltiptext">suspect current player</span>
+
+            </button>
+
+        </div>
+
+
         <div class="turns">
 
             <div class="turn" id="Player 1" >
@@ -132,7 +149,7 @@
                     <source src="audio/1.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>                
-                <p id="e1" style="display:none">Player 1 finished her turn.</p>
+                <p id="e1" style="display:none">Player 1 finished her turn and was suspected by 1 time.</p>
             </div>
 
             <div class="turn" id=" Player 2">
@@ -141,7 +158,7 @@
                     <source src="audio/2.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>
-                <p id="e2" style="display:none">Player 2 finished her turn.</p>
+                <p id="e2" style="display:none">Player 2 finished her turn and was suspected by 0 time.</p>
 
             </div>
 
@@ -151,7 +168,7 @@
                     <source src="audio/3.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>
-                <p id="e3" style="display:none">Player 3 finished her turn.</p>
+                <p id="e3" style="display:none">Player 3 finished her turn and was suspected by 8 times.</p>
             </div>
 
             <div class="turn" id=" Player 4">
@@ -160,7 +177,7 @@
                     <source src="audio/4.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>
-                <p id="e4" style="display:none">Player 4 finished her turn.</p>
+                <p id="e4" style="display:none">Player 4 finished her turn and was suspected by 0 time.</p>
             </div>
 
         </div>
@@ -179,6 +196,8 @@
 
 
         </div>
+
+        <button class="save"> &#10084 </button>
 
         <div class="definition">
             <h3>Definition</h3>
@@ -201,6 +220,8 @@
             </p>
 
         </div>
+
+        <button class="save"> &#10084 </button>
 
         <div class="definition">
             <h3>Definition</h3>

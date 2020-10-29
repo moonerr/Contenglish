@@ -102,6 +102,7 @@ function roundstart() {
     hide("overlay");
     //show the timer
     show("timer");
+    show("operations");
     show("turns");
 }
 
@@ -228,4 +229,8 @@ function playAudio(voiceId) {
 function pausevoice(aud) {
     aud.pause();
     alert("")
+}
+
+function suspect() {
+    playsound('audio/ohhh.mp3');
 }
